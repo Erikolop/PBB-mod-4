@@ -2,6 +2,7 @@ const GUNS = [
     {
         name: 'Glock 17',
         type: 'Pistol',
+        category: 'Handgun',
         caliber: '9mm',
         price: 599,
         image: '/guns/pistol.svg',
@@ -11,6 +12,7 @@ const GUNS = [
     {
         name: 'AK-47',
         type: 'Rifle',
+        category: 'Assault Rifle',
         caliber: '7.62mm',
         price: 899,
         image: '/guns/rifle.svg',
@@ -20,6 +22,7 @@ const GUNS = [
     {
         name: 'Remington 870',
         type: 'Shotgun',
+        category: 'Shotgun',
         caliber: '12 Gauge',
         price: 449,
         image: '/guns/shotgun.svg',
@@ -28,6 +31,7 @@ const GUNS = [
     }, {
         name: 'AR-15',
         type: 'Rifle',
+        category: 'Assault Rifle',
         caliber: '5.56mm',
         price: 799,
         image: '/guns/rifle.svg',
@@ -37,6 +41,7 @@ const GUNS = [
     {
         name: 'Desert Eagle',
         type: 'Pistol',
+        category: 'Handgun',
         caliber: '.50 AE',
         price: 1599,
         image: '/guns/pistol.svg',
@@ -46,6 +51,7 @@ const GUNS = [
     {
         name: 'Mossberg 500',
         type: 'Shotgun',
+        category: 'Shotgun',
         caliber: '12 Gauge',
         price: 399,
         image: '/guns/shotgun.svg',

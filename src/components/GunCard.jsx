@@ -1,7 +1,12 @@
 import { useRef } from 'react'
 
-function GunCard({ gun }) {
+function GunCard({ gun, addToCart }) {
   const popup = useRef(null)
+
+  function handleAdd(e) {
+    e.stopPropagation()
+    addToCart(gun)
+  }
 
   return (
     <li className="card">
@@ -12,6 +17,9 @@ function GunCard({ gun }) {
           {gun.type} · {gun.caliber}
         </span>
         <span className="price">${gun.price.toLocaleString()}</span>
+      </button>
+      <button className="add-cart-btn" type="button" onClick={handleAdd}>
+        + Add to Cart
       </button>
 
       <dialog
